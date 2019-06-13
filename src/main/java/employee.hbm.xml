@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+  
+   <class name = "com.scp.emp.util.EmployeeData" table = "HBM_PRODUCT_INFO">
+      <id name = "id"  column = "ID" type = "int" ></id>
+      <property name = "empName" column = "emp_name" type = "string"/>
+       <property name = "salary" column = "salary" type = "int"/>
+      <property name = "compnayName" column = "compnay_Name" type = "string"/>
+     
+    </class>
+    
+     <class name = "com.scp.emp.util.Product" table = "PRODUCT_INFO">
+      <id name = "p_id"  column = "p_id" type = "int" ></id>
+      <property name = "p_name" column = "p_name" type = "string"/>
+      
+    </class>
+
+</hibernate-mapping>
